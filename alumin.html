@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Moshi technical secondary</title>
+
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                text-decoration: 0;
+                list-style: none;
+                box-sizing: border-box;
+            }
+            body{
+                background-image:url('D:istockphoto-1319088500-170667a.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+              
+               
+            }
+            nav{
+                background-color: rgba(7, 138, 214, 0.715);
+                height: 70px;
+                width: 100%;
+            }
+            label.logo{
+                color: white;
+                font-size: 25px;
+                line-height: 80px;
+                padding: 0 100px;
+                font-weight: bold;
+            }
+            nav ul{
+                float: right;
+                margin-right: 20px;
+            }
+            nav ul li{
+                display: inline-block;
+                line-height: 80px;
+                margin: 0 5px;
+            }
+            nav ul li a{
+                color:whitesmoke;
+                font-size: 11px;
+                padding: 6px 12px;
+                border-radius: 3;
+                text-transform: uppercase;
+            }
+            li a.active{
+                background-color:rgba(233, 138, 4, 0.445);
+                transition: 5s;
+            }
+            li a:hover{
+                background-color: rgba(245, 245, 245, 0.453);
+                color: white;
+            }
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+select{
+  width: 20%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  background-color: #f1f1f1;
+
+}
+
+        </style>
+
+    </head>
+    <body >
+        <nav>
+            <label class="logo">Moshi Technical Secondary school</label>
+            <ul>
+                <li><a  href="PROJECT ASSSIGNMENT.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a  href="register.html">REGISTER</a></li>
+                <li><a class="active" href="login.html">ALUMNI</a></li>
+                <li><a href="staff.html">STAFF</a></li>
+                <li><a href="contacts.html">CONTACTS</a></li>
+               
+            </ul>
+        </nav>
+
+        <form  method="post" action="alumni1.php">
+          <div class="container">
+            <h1 style="text-align: center;">Register</h1>
+            <p style="text-align: center;">Please fill in this form to create an account.</p>
+            <hr>
+            <label for="alname"><b>NAME</b></label>
+            <input type="text" placeholder="Enter your full name" name="alname" id="alname" required maxlength="30">
+
+            <label for="yoe"><b>YEAR OF ENROLLMENT</b></label>
+            <input type="month" placeholder="Enrollment Year" name="yoe" id="yoe" required min="june-1962" max="june-2022">
+
+            <label for="yog"><b>YEAR OD GRADUATION</b></label>
+            <input type="month" placeholder="graduation Year" name="yog" id="yog" required max="june-1962" min="june-2022"><br><br>
+
+            <label for="hme"><b>HEAD MASTER DURING ENROLLMENT</b></label>
+            <input type="text" placeholder="name of headmaste during Enrollment" name="hme" id="hme" required>
+
+            <label for="hme"><b>HEAD MASTER DURING GRADUATION</b></label>
+            <input type="text" placeholder="name of headmaste during graduation" name="hmg" id="hmg" required>
+
+            <label for="hme"><b>FAMOUS TEACHER AT GRADUATION</b></label>
+            <input type="text" placeholder="Famous teacher at graduation" name="ft" id="ft" required>
+            
+            <label for="sresults"><b>YOUR RESULTS</b></label>
+            <select name="sresults" id="aresults" >
+              <option>Summary of Results</option>
+              <option>I</option>
+              <option>II</option>
+              <option>III</option>
+              <option>IV</option>
+              <option>0</option>
+            
+          </select><br><br>
+
+          <label for="occupation"><b>CURRENT OCCUPATION</b></label>
+            <input type="text" placeholder="Enter your current occupation" name="occupation" id="occupation" required>
+
+            <label for="address"><b>YOUR ADDRESS</b></label>
+            <select id="address" name="address">
+              <option>Curent Region</option>
+              <option value="Ar">Arusha</option>
+              <option value="Dar">Dar es salam</option>
+              <option value="Dom">Dodoma</option>
+              <option value="Gt">Geita</option>
+              <option value="Ir">Iringa </option>
+              <option value="Kg">kagera</option>
+              <option value="katavi">katavi</option>
+              <option value="kigoma">kigoma </option>
+              <option value="kiliamanjaro">kiliamanjaro</option>
+              <option value="Lindi">Lindi</option>
+              <option value="Manyara">Manyara</option>
+              <option value="mara">Mara</option>
+              <option value="mbeya">mbeya</option>
+              <option value="morogoro">Morogoro</option>
+              <option value="mtwara">mtwara</option>
+              <option value="mtwara">mwanza</option>
+              <option value="njombe">Njombe</option>
+              <option value="Pwani">Pwani</option>
+              <option value="Rukwa">Rukwa</option>
+              <option value="Ruvuma">Ruvuma</option>
+              <option value="shinyanga">Shinyanga</option>
+              <option value="simiyu">Simiyu</option>
+              <option value="Singida">Singida</option>
+              <option value="Tabora">Tabora</option>
+              <option value="Tanga">Tanga</option>
+              <option value="Zanzibar">Zanzibar</option>
+            </select><br><br>
+
+            <label for="email"><b>EMAIL</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+            <label for="phone"><b>PHONE NUMBER</b></label>
+            <input type="text" placeholder="Enter mobile number " name="phone" id="phone" required>
+        
+            <label for="psw"><b>PASSWORD</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" minlength="8"  required >
+        
+            <label for="psw-repeat"><b>REPEAT PASSWORD</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" minlength="8" required>
+            <hr>
+            <p>By creating an account you agree to our <a href="terms.html">Terms & Privacy</a>.</p>
+        
+            <button type="submit" class="registerbtn">REGISTER</button>
+          </div>
+          
+          <div class="container signin">
+            <p>Already have an account? <a href="login.html">LOGIN</a>.</p>
+          </div>
+        </form>
+
+    </body>
+</html>

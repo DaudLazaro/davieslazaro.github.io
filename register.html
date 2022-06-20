@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Moshi technical secondary</title>
+
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                text-decoration: 0;
+                list-style: none;
+                box-sizing: border-box;
+            }
+            body{
+                background-image:url('D:istockphoto-1319088500-170667a.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+             
+            }
+            nav{
+                background-color: rgba(7, 138, 214, 0.715);
+                height: 70px;
+                width: 100%;
+            }
+            label.logo{
+                color: white;
+                font-size: 25px;
+                line-height: 80px;
+                padding: 0 100px;
+                font-weight: bold;
+            }
+            nav ul{
+                float: right;
+                margin-right: 10px;
+            }
+            nav ul li{
+                display: inline-block;
+                line-height: 80px;
+                margin: 0 5px;
+            }
+            nav ul li a{
+                color:whitesmoke;
+                font-size: 11px;
+                padding: 6px 12px;
+                border-radius: 3;
+                text-transform: uppercase;
+            }
+            li a.active{
+                background-color:rgba(233, 138, 4, 0.445);
+                transition: 5s;
+            }
+            li a:hover{
+                background-color: rgba(245, 245, 245, 0.453);
+                color: white;
+            }
+            form{
+                background-color:rgba(255, 252, 252, 0.968);
+                position:absolute;
+                top: 80px;
+                left: 25px;;
+                right: 25px;
+                height: 550px;
+                width: fit-content;
+               
+                
+               
+               
+               
+               
+
+                }
+                input{
+                   border-color: rgba(15, 15, 244, 0.395);
+                    box-shadow: white;
+                    border-radius: 5px;
+                    width: 200px;
+                    
+                    display: inline-block;
+                    
+                    
+                   
+
+                }
+              input[type=submit]{
+                  background-color: #04AA6D;
+                  color: white;
+                  width: 50%;
+                  padding: 12px;
+                  box-sizing: border-box;
+                  margin-top: 6px;
+                  margin-bottom: 16px;
+                  border: #04AA6D 1px;
+                  border-radius: 20px;
+                  box-shadow: 4px;
+
+              }
+                
+                h3{
+                    
+                    text-decoration: underline;
+                    font-style: italic;
+                }
+
+             
+               
+
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <nav>
+            <label class="logo">Moshi Technical Secondary school</label>
+            <ul>
+                <li><a  href="PROJECT ASSSIGNMENT.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a class="active" href="register.html">REGISTER</a></li>
+                <li><a href="login.html">ALUMNI</a></li>
+                <li><a href="staff.html">STAFF</a></li>
+                <li><a href="contacts.html">CONTACTS</a></li>
+                
+            </ul>
+        </nav>
+       <form method="post" action="register.php">
+           <br>
+           <h3 style="text-align: center;">Moshi technical Secondary School</h3>
+
+        
+           <h1 style="text-align: center;">School Registration Form</h1><br><hr>
+           <p>
+               <h3>Fill in your Full Names</h3><br>
+               <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname">
+            <label for="mname">Middle name</label>
+            <input type="text" id="mname" name="mname" >
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" name="lname" >
+            
+           </p><br>
+           <p>
+               <h3>Particulars</h3><br>
+            <label for="uname">Username</label>
+            <input type="text" id="uname" name="uname" >
+            <label for="dob">Date of birth</label>
+            <input type="date" id="dob" name="dob" min="1990-01-01" max="2013-01-01">
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" pattern="{8}" required>
+           </p><br>
+           <p>
+               <h3>Contacts</h3><br>
+               <label for="mail">Enter your email:</label>
+               <input type="email" id="mail" name="mail" required >
+               <label for="pnum">Phone number:</label>
+               <input type="tel" id="pnum" name="pnum"  required>
+               
+           </p><br>
+           <p>
+               <h3>Social Media Accounts:</h3><br>
+               <label for="fbname">Facebook username:</label>
+               <input type="text" id="fbname" name="fbname" >
+               <label for="twtname">Twitter USername:</label>
+               <input type="text" id="twtname" name="twtname" >
+               <label for="igname">Instragram username:</label>
+               <input type="text" id="igname" name="igname"  placeholder="Instragram username">
+           </p><br>
+           <p style="text-align: center;">
+            <label for="cv">Upload your CV:</label>
+               <input type="file" id="cv" name="cv" placeholder="UPLOAD YOUR CV">
+           </p><br><hr>
+           <p style="text-align: center;">
+               <input type="submit" value="SUBMIT">
+           </p>
+
+          
+         
+           
+
+       </form>
+     
+
+    </body>
+</html>
